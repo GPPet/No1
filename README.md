@@ -1,2 +1,2 @@
-# Rep No1
+# Java course
 GPPet's first steps in Java &amp; GitHub
