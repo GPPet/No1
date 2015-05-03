@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Problem2 {
+
+	public static void main(String[] args) {
+		// Define the maximum in a set of data
+		
+		Scanner input = new Scanner(System.in, "UTF-8");
+		
+		/*System.out.println("Please enter three integers, a, b and c: ");
+		int numA = input.nextInt();
+		int numB = input.nextInt();
+		int numC = input.nextInt();
+		or:*/
+		int numA = 45;
+		int numB = 5;
+		int numC = 2;
+		
+		if ((numA == numB) && (numB == numC)){
+			System.out.println("a = b = c!");
+		}
+		
+		if ((numA > numB) && (numA > numC)){
+			if (numB > numC){
+				System.out.println("The maximum of " + numA + ">" + numB + ">" + numC + " is " + "a=" + numA);
+			}
+		}
+		
+		
+	}
+
+}

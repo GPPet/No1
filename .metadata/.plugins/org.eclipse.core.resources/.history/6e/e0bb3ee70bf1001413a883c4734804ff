@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Problem4 {
+
+	public static void main(String[] args) {
+		// Check whether a, b, c are sides of a triangle
+		
+		Scanner input = new Scanner(System.in, "UTF-8");
+		
+		/*System.out.println("Please enter three integers, a, b and c: ");
+		int numA = input.nextInt();
+		int numB = input.nextInt();
+		int numC = input.nextInt();
+		or:*/
+		int numA = 1;
+		int numB = 1;
+		int numC = 3;
+		
+		//Check whether a, b, c are positive and not zero:
+		if (numA <= 0){
+			System.out.println("a is invalid!");
+		}
+		if (numB <= 0){
+			System.out.println("b is invalid!");
+		}
+		if (numC <= 0){
+			System.out.println("c is invalid!");
+		}
+		
+		
+		double sumAB = Math.pow(numA,2) + Math.pow(numB,2);
+		double c2 = Math.pow(numB,2);
+		if (sumAB < c2){
+			System.out.println("a, b, and c are sides of a triangle.");
+		}
+		
+		//Define the longest side:
+		/*if (Math.max(numA,numB) < numC){
+			double sumAB = Math.pow(numA,2) + Math.pow(numB,2);
+			double c2 = Math.pow(numB,2);
+			if (sumAB < c2){
+				System.out.println("a, b, and c are sides of a triangle.");
+			}
+		} */	
+	}
+}

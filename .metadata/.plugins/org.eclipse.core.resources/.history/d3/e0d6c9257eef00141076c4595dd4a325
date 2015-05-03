@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Problem1 {
+	// Problem 1: Is the quotient of two integers positive or negative?
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in, "UTF-8");
+		
+		//System.out.println("Please enter two integers, a and b: ");
+		//int numA = input.nextInt();
+		//int numB = input.nextInt();
+		int numA = -90;
+		int numB = 90;
+		
+		if (((numA > 0) && (numB > 0)) || ((numA < 0) && (numB < 0) )){
+			System.out.println("The qutient of a/b=" + numA + "/" + numB + " is a positive number.");
+		} else {
+			System.out.println("The qutient of a/b=" + numA + "/" + numB + " is a negative number.");
+		}
+
+	}
+
+}

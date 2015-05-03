@@ -1,0 +1,27 @@
+package april29th;
+
+import java.util.Scanner;
+
+public class Problem29Apr_1 {
+	// Problem 1 from Lecture3, 29th April
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in, "UTF-8");
+		
+		System.out.println("Please enter a word: ");
+		String word = input.nextLine();
+		
+		System.out.println("Please enter two integers, a and b: ");
+		int numA = input.nextInt();
+		int numB = input.nextInt();
+		
+		boolean word10 = word.length() > 10;
+		System.out.println("The word contains less than 10 characters" + word10);
+	
+		/*
+		boolean even = num % 2 == 1;
+		System.out.println(num + " is an odd number: " + even);
+		*/
+	}
+}

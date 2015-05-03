@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Problem6 {
+
+	public static void main(String[] args) {
+		// Cards
+		
+		//Scanner input = new Scanner(System.in, "UTF-8");
+		
+		/*System.out.println("Card: ");
+		String card = input.next();
+		or:*/
+		String card = "1";
+		
+		switch (card) {
+            case "2":
+            case "K":
+                System.out.println("Valid card!");
+                break;
+            default:
+                System.out.println("Invalid card!");
+                break;
+        }		
+	}
+}

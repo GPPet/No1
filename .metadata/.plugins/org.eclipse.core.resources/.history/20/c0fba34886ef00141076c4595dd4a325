@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Problem2 {
+
+	public static void main(String[] args) {
+		// Define the maximum in a set of data
+		
+		Scanner input = new Scanner(System.in, "UTF-8");
+		
+		/*System.out.println("Please enter three integers, a, b and c: ");
+		int numA = input.nextInt();
+		int numB = input.nextInt();
+		int numC = input.nextInt();
+		or:*/
+		int numA = 3;
+		int numB = 45;
+		int numC = 3;
+		
+		if ((numA == numB) && (numB == numC)){
+			System.out.println("a = b = c!");
+		} else if ((numA == numB) && (numA < numC) ){
+			System.out.println("a = b < c => c = " + numC + " is the maximum.");
+		} else if ((numA == numB) && (numA > numC) ){
+			System.out.println("a = b > c => a = b = " + numA + " is the maximum.");
+		} else if ((numB == numC) && (numB > numA) ){
+			System.out.println("a < b = c => b = c = " + numB + " is the maximum.");
+		} else if ((numB == numC) && (numB < numA) ){
+			System.out.println("a > b = c => a = " + numA + " is the maximum.");
+		} else if ((numA == numC) && (numA > numB) ){
+			System.out.println("a = c > b => a = c = " + numA + " is the maximum.");
+		} else if ((numA == numC) && (numA < numB) ){
+			System.out.println("a = c < b => b = " + numB + " is the maximum.");
+		}
+		
+		
+		
+		/*
+		if ((numA > numB) && (numA > numC)){
+			if (numB > numC){
+				System.out.println("The maximum of a>b>c is " + "a=" + numA);
+			} else 
+		}
+		*/
+		
+		
+	}
+
+}
