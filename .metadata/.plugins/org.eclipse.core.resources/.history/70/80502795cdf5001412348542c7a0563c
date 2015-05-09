@@ -1,0 +1,22 @@
+package may07th;
+
+import java.util.Scanner;
+
+public class Problem07May_2 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in, "UTF-8");
+		
+		int sum = 0;
+		
+		do {
+			System.out.println("Enter n");
+			int n = input.nextInt();
+			sum +=n;
+		} while(n != 0);
+		
+		System.out.println("sum = " + sum);
+			
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;may07th.Problem07Macy_3b.java&apos; to &apos;Problem07May_3c.java&apos;&#x0A;- Original project: &apos;GPPets_labwork&apos;&#x0A;- Original element: &apos;may07th.Problem07Macy_3b.java&apos;&#x0A;- Renamed element: &apos;may07th.Problem07May_3c.java&apos;" description="Rename compilation unit &apos;Problem07Macy_3b.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;may07th{Problem07Macy_3b.java" name="Problem07May_3c.java" references="false" stamp="1431124331369" version="1.0"/>
+</session>

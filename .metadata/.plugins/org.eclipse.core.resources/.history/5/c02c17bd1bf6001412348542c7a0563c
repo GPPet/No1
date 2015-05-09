@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Problem3 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+		int N, num, min, max;
+		String ai = "";
+		String all = "";
+		
+		min = 0;
+		max = 1;
+		
+		/*System.out.println("Enter total number of integers N: ");
+		int N = input.nextInt();
+		int[] numbers = new int[N];
+		
+		System.out.println("Enter " + N + " integers");
+		
+		for (int i=0; i<N;i++){
+			numbers[i] = input.nextInt();
+			//System.out.println(i + " " + numbers[i]);
+		}*/
+		
+		System.out.println("Enter total number of integers N: ");
+		N = input.nextInt();
+		System.out.println("Enter the integers ai: ");
+		
+		for (int i=0; i<N; i++){
+			num = input.nextInt();
+			//ai = "a"+ i++ + " = " + num;
+			//all =  all + ai;
+			
+			if (num <= min){
+				min = num;
+			} else if ( num >= max ){
+				max = num;
+			}
+
+		}
+		
+		//System.out.println("numbers: " + all);
+		System.out.println("min = " + min);
+		System.out.println("max = " + max);
+		
+	}
+
+}
