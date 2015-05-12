@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Problem1 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+		
+		System.out.println("Enter array length n:");
+		int n = input.nextInt();
+		
+		int[] array = new int[n];
+		
+		for(int i = 0; i < array.length; i++){
+			int a = -2147483648;
+			int b = 2147483647;
+			int m = 90;
+			
+			array[0] = 3;
+			array[i+1] = (a*array[i] + b)*m;
+			System.out.print(array[i] + " ");
+		}
+		
+		
+		
+		
+	}
+
+}

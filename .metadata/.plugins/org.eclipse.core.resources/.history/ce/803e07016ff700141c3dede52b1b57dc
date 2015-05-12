@@ -1,0 +1,29 @@
+package may08th;
+
+public class Problem4 {
+	//Fill in array's elements, 4x4, horizontal
+	
+	public static void main(String[] args) {
+		
+		int[][] twoD = new int[4][4];
+		
+		
+		for(int row = 0; row < twoD.length; row++){
+				for(int col = 0; col < twoD[row].length; col++){
+					
+				twoD[row][col] = (col+1) ;
+				System.out.print(twoD[row][col] + " ");
+			
+		}
+			
+			
+		
+				
+			System.out.println();
+		}
+		
+		
+	}
+		
+		
+}

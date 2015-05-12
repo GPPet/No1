@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Problem4 {
+	//Search a number in A[n] and prints out the index i of the element
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+		System.out.println("Enter the number x:");
+		int x = input.nextInt();
+		
+		int[] array = new int[150];
+		int hits = 0;
+		
+		for(int i = 0; i < array.length; i++){
+			array[i] = i;
+		}
+		
+		for(int i = 0; i < array.length; i++){
+			if (array[i] == x){
+				System.out.print("x = " + x + "is at A[" + i + "].");
+				hits++;
+			}
+		}
+		
+		if (hits != 0){
+			System.out.println("x meets " + hits + " times in the array!");
+		} else {
+			System.out.println("x is not present in the array!");
+		}
+
+	}
+
+}

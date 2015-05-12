@@ -1,0 +1,49 @@
+package may08th;
+
+public class Problem1 {
+	//Array symmetry check
+
+	public static void main(String[] args) {
+
+		int[] symm = new int[4];
+		
+		symm[0] = 9;
+		symm[1] = 2;
+		symm[2] = 2;
+		symm[3] = 4;
+		
+		int n = symm.length;
+		
+		System.out.print(n);
+		
+		String symmetry = "";
+		
+		for(int i = 0; i < (n/2); i++){
+			if (symm[i] == symm[n-i-1] ) {
+				//symmetry = "symmetric";
+				System.out.print("Array is " + symmetry + ".");
+			}
+		}
+		
+		/*if(n % 2 == 0){
+			for(int i = 0; i < (n/2); i++){
+				if (symm[i] == symm[n-i-1] ) {
+					symmetry = "symmetric";
+				} else {
+					symmetry = "not symmetric";
+				}
+			}
+		} else {
+			for(int i = 0; i <= (n/2); i++){
+				if ( symm[i] == symm[n-i-1] ) {
+					symmetry = "symmetric";
+				} else {
+					symmetry = "not symmetric";
+				}
+			}*/
+		
+		
+		//System.out.print("Array is " + symmetry + ".");
+					
+	}		
+}

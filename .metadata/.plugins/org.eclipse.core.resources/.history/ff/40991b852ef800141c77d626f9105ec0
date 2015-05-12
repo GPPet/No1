@@ -1,0 +1,19 @@
+public class Problem6 {
+	//Fill in array's elements, 5x6, with 30->1
+	
+	public static void main(String[] args) {
+		
+		int[][] twoDRev = new int[6][5];
+		System.out.println(twoDRev[0].length + " " + twoDRev[1].length);
+		int x = twoDRev[0].length * twoDRev[1].length; 
+		
+		for(int row = 0; row < twoDRev.length; row++){
+			for(int col = 0; col < twoDRev[row].length; col++){
+						twoDRev[row][col] = x--;
+						System.out.print(twoDRev[row][col] + " ");
+				}
+			System.out.println();
+		}
+		
+	}		
+}
