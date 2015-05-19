@@ -1,0 +1,14 @@
+package may13th.Employee;
+
+public class Employee {
+	String name;
+	byte hPerWeek;
+	int weekSalary;
+	
+	public Employee(String name, byte hPerWeek, int weekSalary){
+		this.name = name;
+		this.hPerWeek = hPerWeek;
+		this.weekSalary = weekSalary;
+	}
+
+}

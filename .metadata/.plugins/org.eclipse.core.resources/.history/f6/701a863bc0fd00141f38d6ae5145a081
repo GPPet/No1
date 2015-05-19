@@ -1,0 +1,12 @@
+package stock;
+
+import java.util.ArrayList;
+
+public class SuperMarket {
+	protected String name;
+	protected String address;
+	
+	ArrayList<Object> stockList = new ArrayList<Object>();
+	stockList(new Vegies(34, true, ))
+
+}

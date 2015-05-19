@@ -1,0 +1,18 @@
+package Person.copy;
+
+public class Person {
+	String name;
+	int age;
+	String eMail;
+	
+	public Person(){
+		this.name = "";
+		this.age = 0;
+		this.eMail = "";
+	}
+	
+	public void infoPrint(){
+		System.out.println("Person:\t" + name + "\nAge:\t" + age + "\nE-mail:\t" + eMail);
+	}
+	
+}

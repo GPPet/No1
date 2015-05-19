@@ -1,0 +1,38 @@
+package stock;
+
+public class Meat extends Stock{
+	protected String meatType; //chicken, beef, pork, etc.
+	protected int bestBeforeDays;
+	protected int kilo; //available amount
+	protected boolean frozen; //frozen or fresh
+	
+	public Meat(){
+		super();
+		this.meatType = "";
+		this.bestBeforeDays = 0;
+		this.kilo = 0;
+		this.frozen = false;
+	}
+	
+	public Meat(int price, boolean available, int kilo, boolean frozen){
+		super();
+		
+		setKilo(kilo);
+		setFrozen(frozen);
+	}
+	
+	public int getKilo(){
+		return kilo;
+	}
+	public void setKilo(int kilo){
+		this.kilo = kilo;
+	}
+	
+	public boolean getFrozen(){
+		return frozen;
+	}
+	public void setFrozen(boolean frozen){
+		this.frozen = frozen;
+	}
+
+}

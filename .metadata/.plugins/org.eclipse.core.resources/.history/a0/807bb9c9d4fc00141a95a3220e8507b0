@@ -1,0 +1,48 @@
+package may13th.Employee;
+
+public class Employee {
+	protected String name;
+	protected byte hPerWeek;
+	protected int weekSalary;
+	
+	public Employee(){
+		this.name = "";
+		this.hPerWeek = 0;
+		this.weekSalary = 0;
+	}
+	
+	public Employee(String name, byte hPerWeek, int weekSalary){
+		this();
+		
+		setName(name);
+		setHPerWeek(hPerWeek);
+		setWeekSalary(weekSalary);
+	}
+
+	public String getName(){
+		return name;
+	}
+	
+	public void setName(String name){
+		this.name = name;
+	}
+	
+	public byte getHPerWeek(){
+		return hPerWeek;
+	}
+	
+	public void setHPerWeek(byte hPerWeek){
+		this.hPerWeek = hPerWeek;
+	}
+	
+	public int getWeekSalary(){
+		return weekSalary;
+	}
+	
+	public void setWeekSalary(int weekSalary){
+		this.weekSalary = weekSalary;
+	}
+	
+
+}
+

@@ -1,0 +1,15 @@
+package stock;
+
+public class SuperMarket {
+	protected String name;
+	protected String address;
+	protected int[] alcohol;
+	
+	public SuperMarket(){
+		
+	}
+	
+	
+	
+
+}

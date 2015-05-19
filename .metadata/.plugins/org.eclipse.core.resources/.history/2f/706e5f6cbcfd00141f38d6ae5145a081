@@ -1,0 +1,33 @@
+package stock;
+
+public class Veggies extends Stock {
+	protected int bestBeforeDays;
+	protected boolean imported;
+	
+	public Veggies(){
+		super();
+		this.bestBeforeDays = 0;
+		this.imported = false;
+	}
+
+	public Veggies(int price, boolean available, int bestBeforeDays, boolean imported){
+		super(price, available);
+		
+		setBestBeforeDays(bestBeforeDays);
+		setImported(imported);
+	}
+	
+	public int getBestBeforeDays(){
+		return bestBeforeDays;
+	}
+	public void setBestBeforeDays(int bestBeforeDays){
+		this.bestBeforeDays = bestBeforeDays;
+	}
+	
+	public boolean getImported(){
+		return imported;
+	}
+	public void setImported(boolean imported){
+		this.imported = imported;
+	}
+}

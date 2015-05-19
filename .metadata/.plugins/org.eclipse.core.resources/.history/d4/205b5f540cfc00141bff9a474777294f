@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Problem7 {
+	//Binary search of k in A[n]
+	
+	public static void main(String[] args) {
+		
+		int[] testArr = {0,9,2,3,4,59,38,28,5,29,3,5,1,6,8};
+		
+		Scanner input = new Scanner(System.in, "UTF-8");
+		System.out.println("Enter number k:");
+		int k = input.nextInt();
+		int l = testArr.length-1;
+		System.out.println("k = " + k + " and l = " + l);
+		int posK=-1;
+		
+		while(l!=0 && posK==-1){
+			int i = ((l+l%2)/2);
+			int test = testArr[i];
+			
+			if (test == k){
+				posK = i;
+				System.out.println("k is at "+ posK);
+			} else if (k < testArr[i]){
+				posK=-1;
+				//System.out.println("k is at "+ posK);
+				l=i;
+			} else if (k > testArr[i]){
+				posK=-1;
+				//System.out.println("k is at "+ posK);
+				l=l-i;
+			}
+	}
+	}
+}

@@ -1,0 +1,29 @@
+package may13th.Employee;
+
+public class Policeman extends Employee {
+	private String rank;
+	
+	public Policeman(){
+		super();	
+		this.rank = "";
+	}
+	
+	public Policeman(String name, byte hPerWeek, int weekSalary, String rank){
+		super(name, hPerWeek, weekSalary);
+		
+		setRank(rank);
+	}
+	
+	public String getRank(){
+		return rank;
+	}
+	
+	public void setRank(String rank){
+		this.rank = rank;
+	}
+	
+	public void addRank(){
+		super.basicInfo();
+		System.out.println("Rank:\t" + rank);
+	}
+}
