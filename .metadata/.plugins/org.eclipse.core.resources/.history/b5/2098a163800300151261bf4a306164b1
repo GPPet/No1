@@ -1,0 +1,13 @@
+public class hw9_P3 {
+
+	public static void main(String[] args) {
+		
+		String text = "Chemistry is like magic. I love theoretical chemistry. Quantum chemistry, a field of chemistry, is very interesting.";
+		String[] splitText = text.split(" |, |. ");
+		
+		for (String part : splitText) {
+			System.out.println(part);
+		}
+	}
+	
+}

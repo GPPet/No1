@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+
+public class hw9_P3new  {
+	
+	
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		String sentance = "Chemistry is like magic. I love theoretical chemistry. Quantum chemistry, a field of chemistry, is very interesting.";
+		
+		String[] partsClean = sentance.split(" |, |!");
+		
+		for (String part : partsClean) {
+			System.out.println(part);
+		}
+		
+		String word = "chemistry";
+		boolean search = word.equals("chemistry");
+		System.out.println(search);
+
+	}
+
+}

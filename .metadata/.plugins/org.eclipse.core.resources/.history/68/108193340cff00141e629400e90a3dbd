@@ -1,0 +1,27 @@
+package cars;
+
+public class Car {
+	protected int price; //! double
+	
+	public Car(){
+		//this.price = 0; could be completely empty, can contain some logics! :-)
+	}
+	
+	public Car(int price){
+		this();
+		
+		setPrice(price);
+	}
+
+	public int getPrice(){
+		return price;
+	}
+	
+	public void setPrice(int price){
+		if(price < 0){
+			//checks whether the entered number is not proper for price of the object!!!
+		} else {
+			this.price = price;
+		}
+	}
+}

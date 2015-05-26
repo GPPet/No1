@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class hw9_P3 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Please, enter the text:");
+		String text = input.nextLine();
+		System.out.println("Searched word:");
+		String word = input.nextLine();
+		int wordSearch = searchWordInText(text, word);
+		System.out.println("The word " + " is found " + wordSearch +" times in the text.");
+
+	}
+	
+	public static int searchWordInText(String text, String word){
+		String[] arrText = text.split(" ");
+		int counter = 0;
+		for(int i = 0; i < arrText.length; i++){
+			if(arrText[i] == word){
+				System.out.println(word);
+				counter++;
+			}
+		}
+		return counter;
+	}
+
+}

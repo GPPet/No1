@@ -1,0 +1,47 @@
+public class hw8_P5 {
+
+	public static void main(String[] args) {
+		
+		int a = 333;
+		int temp;
+		int aDigits = 1;
+		
+		while ((temp=a/10) != 0){
+			aDigits++;
+		}
+		
+		System.out.println(aDigits);
+		
+		int[] aInDigits = new int[aDigits];
+		
+		for(int i = 0; i < aDigits; i++){
+			aInDigits[aDigits-1-i] = a % 10;
+			a = a / 10;
+			System.out.print(aInDigits[aDigits -1 - i] + " ");
+		}
+		
+
+	}
+
+	/*public static boolean checkIntSymmetry(int a){
+		boolean isSymmetric = false;
+		int n = 0;
+		while ((a/10) != 0) n++;
+		int[] aInDigits = new int[n];
+		
+		for(int i = 0; i < n; i++){
+			aInDigits[n-i] = a % 10;
+			a /= 10;
+		}
+		
+		for(int i = 0; i< (n+n%2)/2; i++){
+			if (aInDigits[i] == aInDigits[n-i]){
+				isSymmetric = true;
+			}
+		}
+		
+		return isSymmetric;
+	}
+
+	*/
+}
