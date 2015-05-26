@@ -5,12 +5,12 @@ public class SchoolTeacher extends Teacher{
 	
 	public SchoolTeacher(){
 		super();
-		setClasses(String[]);
+		//setClasses(String[]);
 	}
 	
 	public SchoolTeacher(String firstName, String familyName, int yearsOfService, String subject, String[] classes){
 		super(firstName, familyName, yearsOfService, subject);
-		setClasses(classes[5]);
+		//setClasses(classes[5]);
 	}
 	
 	public String[] getClasses(){

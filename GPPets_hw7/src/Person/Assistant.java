@@ -1,7 +1,7 @@
 package Person;
 
 public class Assistant extends Lecturer{
-	private boolean chief;
+	private boolean chief; //better name isChief
 	
 	public Assistant(){
 		super();

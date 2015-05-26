@@ -1,7 +1,7 @@
 package Person;
 
 public class Lecturer extends Person implements Exercise {
-	protected String uniName;
+	protected String uniName; //private should be!
 	private static final int MAX_LECTURES = 10;
 	
 	public Lecturer(){

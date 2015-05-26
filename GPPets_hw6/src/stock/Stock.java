@@ -2,7 +2,7 @@ package stock;
 
 public abstract class Stock {
 	protected float price;
-	protected boolean available;
+	protected boolean available; //static + counter
 	protected int bestBeforeDays;
 
 	public float getPrice(){

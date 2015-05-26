@@ -4,9 +4,9 @@ public class SUV extends Car{
 	protected boolean highlander;
 	
 	public SUV(){
-		super();
+	//	super();
 		
-		this.highlander = false;
+	//	this.highlander = false;
 	}
 	
 	public SUV(int price, boolean highlander){
