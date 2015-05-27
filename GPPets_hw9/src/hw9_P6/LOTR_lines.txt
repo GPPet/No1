@@ -1,0 +1,62 @@
+1	For a while the three companions remained silent, gazing after him. Then Aragorn spoke. 
+2	'They will look for him from the White Tower,' he said, 'but he will not return from mountain or from sea.'
+3	Then slowly he began to sing:
+4	        Through Rohan over fen and field where the long grass grows
+5	
+6	        The West Wind comes walking, and about the walls it goes.
+7	
+8	        'What news from the West, O wandering wind, do you bring to me tonight?
+9	
+10	        Have you seen Boromir the Tall by moon or by starlight?'
+11	
+12	        'I saw him ride over seven streams, over waters wide and grey;
+13	
+14	        I saw him walk in empty lands, until he passed away
+15	
+16	        Into the shadows of the North. I saw him then no more.
+17	
+18	        The North Wind may have heard the horn of the son of Denethor.'
+19	
+20	        'O Boromir! From the high walls westward I looked afar,
+21	
+22	        But you came not from the empty lands where no men are.'
+23	Then Legolas sang:
+24	        From the mouths of the Sea the South Wind flies, from the sandhills and the stones;
+25	
+26	        The wailing of the gulls it bears, and at the gate it moans.
+27	
+28	        'What news from the South, O sighing wind, do you bring to me at eve?
+29	
+30	        Where now is Boromir the Fair? He tarries and I grieve.'
+31	
+32	        'Ask not of me where he doth dwell-so many bones there lie
+33	
+34	        On the white shores and the dark shores under the stormy sky;
+35	
+36	        So many have passed down Anduin to find the flowing Sea.
+37	
+38	        Ask of the North Wind news of them the North Wind sends to me!'
+39	
+40	        'O Boromir! Beyond the gate the seaward road runs south,
+41	
+42	        But you came not with the wailing gulls from the grey sea's mouth.'
+43	Then Aragorn sang again:
+44	        From the Gate of Kings the North Wind rides, and past the roaring falls;
+45	
+46	        And clear and cold about the tower its loud horn calls.
+47	
+48	        'What news from the North, O mighty wind, do you bring to me today?
+49	
+50	        What news of Boromir the Bold? For he is long away.'
+51	
+52	        'Beneath Amon Hen I heard his cry. There many foes he fought.
+53	
+54	        His cloven shield, his broken sword, they to the water brought.
+55	
+56	        His head so proud, his face so fair, his limbs they laid to rest;
+57	
+58	        And Rauros, golden Rauros-falls, bore him upon its breast.'
+59	
+60	        'O Boromir! The Tower of Guard shall ever northward gaze
+61	
+62	        To Rauros, golden Rauros-falls, until the end of days.'
