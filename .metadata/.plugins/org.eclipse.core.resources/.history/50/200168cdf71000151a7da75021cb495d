@@ -1,0 +1,24 @@
+package lw10_Student;
+
+import java.util.HashMap;
+
+public class studentDB {
+
+	public static void main(String[] args) {
+		// HashMap, който да съдържа всички негови предмети и съответно оценки по тях.
+		// Реализирайте метод addSubjectMark, който добавя оценка към определен предмет.
+		// Направете метод calculateAvarageMark(), който приема предмет и връща средния успех по предмета.
+		// Демонстрирайте класа като създадете 3 ученика с поне по 5 предмета и 3 оценки по всеки от тях.
+		
+		HashMap<Student, Subject> allStudents = new HashMap<Student, Subject>();
+		Student pnp = new Student("Petar", "Petrov", 6531);
+		Student dzh = new Student("Diana", "Zhiryakova", 6602);
+		Student bik = new Student("Bozhil", "Kolev", 6521);
+		
+		
+		
+		
+
+	}
+
+}

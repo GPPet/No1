@@ -1,0 +1,47 @@
+package lw10_Student;
+
+import java.io.ObjectInputStream.GetField;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Subject {
+	private String subject;
+	private ArrayList<Float> subjectMarks;
+//	private HashMap<String, ArrayList<Float>> subjectHM;
+	
+	public Subject(){
+	}
+	
+	public Subject(String subject, ArrayList<Float> subjectMarks){
+		setSubject(subject);
+		setSubjectMarks(getSubjectMarks());
+	}
+	
+	
+	public String getSubject() {
+		return subject;
+	}
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+	public ArrayList<Float> getSubjectMarks() {
+		return subjectMarks;
+	}
+	public void setSubjectMarks(ArrayList<Float> subjectMarks) {
+		this.subjectMarks = subjectMarks;
+	}
+//	public HashMap<String, ArrayList<Float>> getSubjectHM() {
+//		return subjectHM;
+//	}
+//	public void setSubjectHM(HashMap<String, ArrayList<Float>> subjectHM) {
+//		this.subjectHM = subjectHM;
+//	}
+	
+	
+	public static HashMap<String, ArrayList<Float>> addSubjectMark(HashMap<String, ArrayList<Float>> subjectHM, String subject, float mark){
+		if(mark >= 2.0f && mark <= 6.0f) subjectHM.get(subject).add(mark);
+		return subjectHM;
+	}
+	
+	public 
+}

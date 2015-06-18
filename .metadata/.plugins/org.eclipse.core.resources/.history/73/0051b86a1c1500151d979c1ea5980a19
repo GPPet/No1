@@ -1,0 +1,121 @@
+import java.awt.EventQueue;
+import java.util.List;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
+import java.nio.file.Files;
+import java.text.NumberFormat;
+import java.text.ParseException;
+import java.util.Locale;
+
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import javax.swing.JOptionPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.ListSelectionModel;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.swing.plaf.FileChooserUI;
+import javax.swing.table.DefaultTableModel;
+
+
+public class Import_and_Export {
+
+	private JFrame frmGPP;
+	private JTable table;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Locale.setDefault(Locale.US);
+					Import_and_Export window = new Import_and_Export();
+					window.frmGPP.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Import_and_Export() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmGPP = new JFrame();
+		frmGPP.setTitle("GPPframe");
+		frmGPP.setBounds(100, 100, 450, 300);
+		frmGPP.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmGPP.getContentPane().setLayout(null);
+		
+		//GPP table
+		Object[][] rowData = new Object[0][3];
+		Object[] columnNames = {"Date", "Expence", "Price"};
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(10, 10, 422, 214);
+		frmGPP.getContentPane().add(scrollPane);
+		
+		table = new JTable(new DefaultTableModel(rowData, columnNames));
+		
+		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		scrollPane.setViewportView(table);
+		
+		JButton btnImport = new JButton("Import");
+		btnImport.setBounds(184, 236, 117, 25);
+		frmGPP.getContentPane().add(btnImport);
+		btnImport.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try{
+					JFileChooser fileChooser = new JFileChooser();
+					fileChooser.setFileFilter(new FileNameExtensionFilter("Data file", "txt"));
+					fileChooser.showDialog(null, "Choose file...");
+					
+					File file = fileChooser.getSelectedFile();
+					
+					List<String> fileContent = Files.readAllLines(file.toPath());
+					
+					for (String line : fileContent) {
+						NumberFormat numberFormat = NumberFormat.getNumberInstance(Locale.US);
+						
+						String[] row = line.split(" | ");
+//						Date date = row[0];//Varaible?!
+						String name = "";
+						double price = 0;
+						
+						try {
+							name = row[1];
+							price = numberFormat.parse(row[2]).doubleValue();
+						} catch (ParseException ex) {
+							JOptionPane.showMessageDialog(null, "Error parsing data!");
+							ex.printStackTrace();
+						}
+//						Item item = new Item(date, name, price);
+						DefaultTableModel model = (DefaultTableModel) table.getModel();
+//						model.addRow(new Object[] { item.getDate(), item.getName(), item.getPrice()});
+					}
+				} catch (Exception ex) {
+					JOptionPane.showMessageDialog(null, "Error loading file!");
+				}
+				JOptionPane.showMessageDialog(null, "File loaded successfully!");
+				
+			}
+		});
+		
+		
+		
+		
+	}
+}

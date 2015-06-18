@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.util.Stack;
+
+
+public class Problem_1 {
+
+	public static void main(String[] args) {
+		// Напишете програма, която обръща думите в едно изречение на обратно. Използвайте стек.
+		Scanner input = new Scanner(System.in);
+//		System.out.println("Enter a sentence:");
+//		String sentence = input.nextLine();
+		String sentence = "Murder for a jar of red rum.";
+		String[] stringSentence = sentence.split("[ .,?!]");
+		
+		Stack<String> stackSentence = new Stack<String>();
+		for(String word : stringSentence){
+			stackSentence.add(word);
+		}
+		while(stackSentence.size() > 0){
+			stackSentence.pop();
+			System.out.println(stackSentence.peek());
+		}
+		
+		
+	}
+
+}

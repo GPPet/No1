@@ -1,0 +1,37 @@
+import java.util.HashMap;
+import java.util.Scanner;
+
+
+public class hw10_P5 {
+
+	public static void main(String[] args) {
+		// P5.
+		// Напишете програма, която приема текст и извежда на екрана всички думи, които са уникални (срещат се само веднъж).
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("Please, enter the text:");
+		String text = input.nextLine();
+		
+		String[] splitText = text.split("\\W");
+		
+		System.out.println("Unique words:");
+		
+		HashMap<String, Integer> newAtt = new HashMap<String, Integer>();
+		int count = 0;
+		
+		for (int i = 0; i < splitText.length; i++){
+			count = 1;
+			for (int j = i+1; j < splitText.length; j++){
+				if (splitText[i].toLowerCase() == splitText[j].toLowerCase()){
+					count++;
+				}
+			}
+			
+			newAtt.put(splitText[i].toLowerCase(), count);	
+			
+		}
+		
+		System.out.println(newAtt);
+	}
+
+}

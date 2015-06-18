@@ -1,0 +1,89 @@
+package lw10_Student;
+
+import java.io.ObjectInputStream.GetField;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class Student {
+	// Напрате клас Student, който съдържа полета: име, фамилия, номер, 
+	// както и HashMap, който да съдържа всички негови предмети и съответно оценки по тях.
+	// Реализирайте метод addSubjectMark, който добавя оценка към определен предмет.
+	// Направете метод calculateAvarageMark(), който приема предмет и връща средния успех по предмета.
+	// Демонстрирайте класа като създадете 3 ученика с поне по 5 предмета и 3 оценки по всеки от тях.
+
+	private String firstName;
+	private String familyName;
+	private int facNo;
+	private String subject;
+	private ArrayList<Integer> marks;
+	private HashMap<String, ArrayList<Integer>> subjectMarks;
+	
+	public Student(){
+	}
+	
+	public Student(String firstName, String familyName, int facNo) {
+		this.firstName = firstName;
+		this.familyName = familyName;
+		this.facNo = facNo;
+	}
+	
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getFamilyName() {
+		return familyName;
+	}
+	public void setFamilyName(String familyName) {
+		this.familyName = familyName;
+	}
+	public int getFacNo() {
+		return facNo;
+	}
+	public void setFacNo(int facNo) {
+		if (facNo > 0) this.facNo = facNo;
+		else this.facNo = -1;
+	}
+	
+	
+	public HashMap<String, ArrayList<Integer>> getSubjectMarks() {
+		return subjectMarks;
+	}
+
+	public void setSubjectMarks(HashMap<String, ArrayList<Integer>> subjectMarks) {
+		this.subjectMarks = subjectMarks;
+	}
+		
+	public HashMap<String, ArrayList<Integer>> addSubjectMark(HashMap<String, V>String subject, int mark){
+		this.subjectMarks = subjectMarks;
+		this.subject = subject;
+		
+		
+		return subjectMarks;
+	}
+
+	public static int calculateAverage(String subject){
+		ArrayList<Integer> test = getSubjectMarks.get(subject);
+		int sum = 0;
+		
+		for(int i = 0; i < )
+		
+		return 
+	}
+	
+	@Override
+	public String toString() {
+		String result = "";
+		result += "Student:\t" + getFirstName() + " " + getFamilyName();
+		result += "\nFac. No:\t" + getFacNo();
+		return result;
+	}
+
+	
+	
+	
+	
+
+}

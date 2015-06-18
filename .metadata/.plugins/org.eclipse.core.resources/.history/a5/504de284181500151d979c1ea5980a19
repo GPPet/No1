@@ -1,0 +1,67 @@
+import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Locale;
+
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import javax.swing.plaf.FileChooserUI;
+
+
+public class Import_and_Export {
+
+	private JFrame frmGPP;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Locale.setDefault(Locale.US);
+					Import_and_Export window = new Import_and_Export();
+					window.frmGPP.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Import_and_Export() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmGPP = new JFrame();
+		frmGPP.setTitle("GPPframe");
+		frmGPP.setBounds(100, 100, 450, 300);
+		frmGPP.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmGPP.getContentPane().setLayout(null);
+		
+		JButton btnImport = new JButton("Import");
+		btnImport.setBounds(178, 222, 117, 25);
+		frmGPP.getContentPane().add(btnImport);
+		btnImport.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				try{
+					JFileChooser fileChooser = new JFileChooser();
+					fileChooser.setFileFilter(filter);
+				}
+				
+			}
+		});
+		
+		
+		
+	}
+}

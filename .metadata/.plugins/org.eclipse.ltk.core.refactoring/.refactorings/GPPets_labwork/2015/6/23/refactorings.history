@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;june05th.InvalidPassword&apos; to &apos;InvalidUserNameOrPassword&apos;&#x0A;- Original project: &apos;GPPets_labwork&apos;&#x0A;- Original element: &apos;june05th.InvalidPassword&apos;&#x0A;- Renamed element: &apos;june05th.InvalidUserNameOrPassword&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;InvalidPassword&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;june05th{InvalidPassword.java[InvalidPassword" matchStrategy="1" name="InvalidUserNameOrPassword" qualified="false" references="true" similarDeclarations="false" stamp="1433529107762" textual="false" version="1.0"/>
+</session>

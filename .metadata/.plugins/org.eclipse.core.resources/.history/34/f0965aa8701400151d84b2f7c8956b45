@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+
+
+public class Problem_p19_6 {
+
+	public static void main(String[] args) {
+		// Направете програма, която приема 10 числа. Подредете във възходящ ред всички четни числа в масив. 
+		// Подредете всички нечетни числа в низходящ ред в друг масив.
+		
+		int n = 10;
+		int[] testArr = new int[n];
+		for(int i = 0; i < n; i++){
+			testArr[i] = (int) (100*Math.random());
+			System.out.print(testArr[i] + " ");
+		}
+		
+		ArrayList<Integer> even = new ArrayList<Integer>();
+		ArrayList<Integer> odd = new ArrayList<Integer>();
+		
+		for(int i = 0; i < n; i++){
+			if(testArr[i] % 2 == 0){
+				even.add(testArr[i]);
+			} else{
+				odd.add(testArr[i]);
+			}
+		}
+		
+		even.sort(null);
+		odd.sort(null);
+		ArrayList<Integer> oddDown = new ArrayList<Integer>();
+		for(int i = odd.size() - 1; i >= 0 ; i--){
+			oddDown.add(odd.get(i));
+		}
+		
+		
+		System.out.println("Even:\t" + even.toString() + "\nOdd:\t" + odd.toString());
+		
+	}
+
+}

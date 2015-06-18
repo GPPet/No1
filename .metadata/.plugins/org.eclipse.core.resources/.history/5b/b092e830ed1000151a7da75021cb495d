@@ -1,0 +1,10 @@
+package lw10_Town;
+
+public class townMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

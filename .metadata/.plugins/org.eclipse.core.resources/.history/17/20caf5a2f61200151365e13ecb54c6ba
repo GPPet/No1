@@ -1,0 +1,10 @@
+package lw10_Student;
+
+import java.util.ArrayList;
+
+public class Subject {
+	private String subject;
+	private ArrayList<Integers> 
+	
+
+}

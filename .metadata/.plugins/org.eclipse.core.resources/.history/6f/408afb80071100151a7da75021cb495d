@@ -1,0 +1,39 @@
+import java.util.HashMap;
+import java.util.Scanner;
+
+
+public class hw10_P5 {
+
+	public static void main(String[] args) {
+		// P5.
+		// Напишете програма, която приема текст и извежда на екрана всички думи, които са уникални (срещат се само веднъж).
+
+//		Scanner input = new Scanner(System.in);
+//		System.out.println("Please, enter the text:");
+//		String text = input.nextLine();
+		
+		String text = "We are living in a yellow submarine. We don't have anything else. Inside the submarine isvery tight. So we are drinking all the day. We will move out of it in 5 days.";
+		String key = "";
+		int keyCount = 0;
+		
+		text = text.toLowerCase();
+		String[] splitText = text.split("\\W");
+		
+		for(String word:splitText){
+			int index = 0;
+			key = word;
+			while (index < text.length()){
+				index = text.indexOf(key,index);
+				if (index == -1) break;
+				index += 1;
+				keyCount++;
+			}
+			System.out.println(word + " : " + keyCount);
+		}
+		
+		
+		
+		
+	}
+
+}

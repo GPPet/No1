@@ -1,0 +1,38 @@
+package hw10_P4;
+
+public class book {
+	protected String title;
+	protected String author;
+	protected int numberPages;
+	
+	public book(){
+	}
+	
+	public book(String title, String authorFamily, int numberPages){
+		setTitle(title);
+		setAuthorFamily(authorFamily);
+		setNumberPages(numberPages);
+	}
+	
+	public String getTitle(String title) {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	
+	public String getAuthorFamily(String authorFamily) {
+		return authorFamily;
+	}
+	public void setAuthorFamily(String authorFamily) {
+		this.author = authorFamily;
+	}
+	
+	public int getNumberPages(int numberPages) {
+		return numberPages;
+	}
+	public void setNumberPages(int numberPages) {
+		this.numberPages = numberPages;
+	}
+	
+}

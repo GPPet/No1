@@ -1,0 +1,56 @@
+package lw10_Student;
+
+public class Student {
+	// Напрате клас Student, който съдържа полета: име, фамилия, номер, 
+	// както и HashMap, който да съдържа всички негови предмети и съответно оценки по тях.
+	// Реализирайте метод addSubjectMark, който добавя оценка към определен предмет.
+	// Направете метод calculateAvarageMark(), който приема предмет и връща средния успех по предмета.
+	// Демонстрирайте класа като създадете 3 ученика с поне по 5 предмета и 3 оценки по всеки от тях.
+
+	private String firstName;
+	private String familyName;
+	private int facNo;
+	
+	public Student(){
+	}
+	
+	public Student(String firstName, String familyName, int facNo) {
+		this.firstName = firstName;
+		this.familyName = familyName;
+		this.facNo = facNo;
+	}
+	
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getFamilyName() {
+		return familyName;
+	}
+	public void setFamilyName(String familyName) {
+		this.familyName = familyName;
+	}
+	public int getFacNo() {
+		return facNo;
+	}
+	public void setFacNo(int facNo) {
+		if (facNo > 0) this.facNo = facNo;
+		else this.facNo = -1;
+	}
+	
+	@Override
+	public String toString() {
+		String result = "";
+		result += "Student:\t" + getFirstName() + " " + getFamilyName();
+		result += "\nFac. No:\t" + getFacNo();
+		return result;
+	}
+	
+	
+	
+	
+	
+
+}
