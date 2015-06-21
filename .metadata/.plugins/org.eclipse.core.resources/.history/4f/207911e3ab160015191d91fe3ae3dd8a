@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+public class user {
+
+	public static void main(String[] args) {
+		MatrixConverter test = new MatrixConverter();
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Please, enter the size of the matrix:");
+		int n = input.nextInt();
+		test.setSize(n);
+		
+		
+		
+		
+		
+
+	}
+
+}

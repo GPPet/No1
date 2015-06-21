@@ -1,0 +1,15 @@
+package Problem_p22_1;
+
+import java.io.ObjectInputStream;
+
+public class ReadFile {
+	private ObjectInputStream input;
+	private String filePath;
+	
+	
+	
+	
+	
+	
+
+}

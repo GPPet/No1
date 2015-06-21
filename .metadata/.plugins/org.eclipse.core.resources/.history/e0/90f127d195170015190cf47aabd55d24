@@ -1,0 +1,40 @@
+package cars_new;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Car[] carArr = new Car[10];
+		
+		carArr[0] = new Automobile(2300.0, 23.1);
+		carArr[1] = new Automobile(3800.0, 12.1);
+		carArr[2] = new Automobile(4500.0, 19.4);
+		carArr[3] = new Automobile(2700.0, 18.3);
+		carArr[4] = new Automobile(8700.0, 23.9);
+		carArr[5] = new SUB(4500,true);
+		carArr[6] = new SUB(8700,false);
+		carArr[7] = new SUB(2300,true);
+		carArr[8] = new SUB(2000,false);
+		carArr[9] = new SUB(9000,true);
+		
+		double[] arrTest = {3.4, 23, 4, 45.6, 23.4, 67.8};
+		sortArr(arrTest, 0);
+		for(Double el : arrTest)
+		System.out.println(el + " ");
+		
+	}
+	
+	public static double[] sortArr(double[] arr, int index){
+		if (index == arr.length - 1) return arr;
+		
+		for(int i = index; i < arr.length; i++){
+			if(arr[i] <= arr[index]) {
+				double tmp = arr[index];
+				arr[index] = arr[i];
+				arr[i] = tmp;
+			}
+		}
+		return sortArr(arr, index++);
+	}
+	
+}
+

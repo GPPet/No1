@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+
+public class user {
+
+	public static void main(String[] args) {
+		MatrixConverter test = new MatrixConverter();
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Please, enter the size of the matrix:");
+		int n = input.nextInt();
+		test.setSize(n);
+		
+		System.out.println("For 1D to 2D enter \"1\"; for 2D to 1D enter \"2\"" );
+		int testN = input.nextInt();
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

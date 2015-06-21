@@ -1,0 +1,9 @@
+package Problem_p49_2;
+
+public class MyThreadRunning extends Thread{
+	
+	public void run(){
+		
+	}
+
+}

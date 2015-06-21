@@ -1,0 +1,31 @@
+package cars_new;
+
+import java.util.ArrayList;
+import java.util.TreeMap;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ArrayList<Car> cars = new ArrayList<Car>();
+		TreeMap<Double, Car> carsTree = new TreeMap<Double, Car>();
+		
+		cars.add(new Automobile(2300.0, 23.1));
+		cars.add(new Automobile(3800.0, 12.1));
+		cars.add(new Automobile(4500.0, 19.4));
+		cars.add(new Automobile(2700.0, 18.3));
+		cars.add(new Automobile(8700.0, 23.9));
+		cars.add(new SUB(4500,true));
+		cars.add(new SUB(8700,false));
+		cars.add(new SUB(2300,true));
+		cars.add(new SUB(2000,false));
+		cars.add(new SUB(9000,true));
+		
+		for(Car car : cars)
+			carsTree.put(car.getPrice(), car);
+		
+		System.out.println(carsTree.toString());
+		
+	}
+	
+}
+

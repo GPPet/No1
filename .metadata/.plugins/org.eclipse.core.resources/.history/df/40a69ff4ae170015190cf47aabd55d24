@@ -1,0 +1,17 @@
+package Problem_p49_2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		MyThreadCounting tCount = new MyThreadCounting();
+		MyThreadRunning tRun = new MyThreadRunning();
+		
+		tCount.start();
+		tRun.start();
+		tRun.notify();
+		
+
+		
+	}
+
+}

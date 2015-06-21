@@ -1,0 +1,41 @@
+
+public class MatrixConversion {
+	private int size;
+	private int[] oneD;
+	private int[][] twoD;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public int getSize() {
+		return size;
+	}
+	public void setSize(int size) {
+		if ((size >= 2) && (size <= 9) ) this.size = size;
+		else System.out.println("The number is not in the required range!");
+	}
+	public int[] getOneD() {
+		return oneD;
+	}
+	public void setOneD(int[] oneD) {
+		this.oneD = oneD;
+	}
+	public int[][] getTwoD() {
+		return twoD;
+	}
+	public void setTwoD(int[][] twoD) {
+		this.twoD = twoD;
+	}
+	
+	
+	
+	
+
+}

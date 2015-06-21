@@ -1,0 +1,42 @@
+package Problem_p49_2;
+
+class Test {
+	synchronized void midPoint(int count) {
+		if (this.count < count) {
+			try {
+				wait();
+			} catch (Exception e) {
+
+			}
+		}
+		System.out.println("withdraw completed...");
+	}
+
+	synchronized void deposit(int amount) {
+		System.out.println("going to deposit...");
+		this.amount += amount;
+		System.out.println("deposit completed... ");
+		notify();
+		System.out.println(this.amount);
+	}
+}
+
+class InterThreadCommunication {
+	public static void main(String args[]) {
+		test c = new Customer();
+		
+		Thread t1 = new Thread() {
+			public void run() {
+				c.withdraw(15000);
+			}
+		};
+		t1.start();
+
+		new Thread() {
+			public void run() {
+				c.deposit(10000);
+			}
+		}.start();
+
+	}
+}

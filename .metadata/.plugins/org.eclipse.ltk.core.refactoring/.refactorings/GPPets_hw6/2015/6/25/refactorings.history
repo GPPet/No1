@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;cars_new.SUB.isOffRoad&apos; in &apos;cars_new.SUB&apos;&#x0A;- Original project: &apos;GPPets_hw6&apos;&#x0A;- Original element: &apos;cars_new.SUB.isOffRoad&apos;&#x0A;- Getter method name: &apos;isOffRoad&apos;&#x0A;- Setter method name: &apos;setOffRoad&apos;&#x0A;- Field visibility: &apos;public&apos;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;isOffRoad&apos;" flags="589830" getter="isOffRoad" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;cars_new{SUB.java[SUB^isOffRoad" insertion="0" setter="setOffRoad" stamp="1434835688692" version="1.0" visibility="1"/>
+</session>

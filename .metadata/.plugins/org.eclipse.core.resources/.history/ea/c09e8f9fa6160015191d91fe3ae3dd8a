@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = 3;
+		int oneDSize = n*n;
+//		int[] oneD = new int[oneDSize];
+		int[][] twoD = new int[n][n];
+		
+//		Scanner input = new Scanner(System.in);
+//		for(int i = 0; i < oneDSize; i++){
+//			System.out.println("Please enter a number:");
+//			oneD[i] = input.nextInt();
+//		}
+		
+		int[] oneD = {5,3,2,0,6,1,2,4,4};
+		
+		for(Integer num : oneD)
+		System.out.println(num + " ");
+		
+		for(int col = 0; col < twoD[0].length; col++){
+			for(int row = 0; row < twoD.length; row++){
+				for(int i = 0; i < oneDSize; i++){
+					System.out.print(oneD[i]);
+					twoD[row][col] = oneD[i]*i;
+				}
+			}
+		}
+		
+		for(int row = 0; row < twoD.length; row++){
+			for(int col = 0; col < twoD[0].length; col++){
+				System.out.print(twoD[row][col] + " | ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}

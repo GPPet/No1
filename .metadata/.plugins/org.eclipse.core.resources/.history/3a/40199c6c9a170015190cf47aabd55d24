@@ -1,0 +1,21 @@
+package cars_new;
+
+public class SUB extends Car{
+	private boolean isOffRoad;
+
+	public SUB(double price, boolean isOffRoad) {
+		super(price);
+		this.setOffRoad(isOffRoad);
+	}
+
+	public boolean isOffRoad() {
+		return isOffRoad;
+	}
+
+	public void setOffRoad(boolean isOffRoad) {
+		this.isOffRoad = isOffRoad;
+	}
+	
+	
+
+}

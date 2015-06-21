@@ -1,0 +1,31 @@
+package cars_new;
+
+public class Automobile extends Car{
+	private double fuelConsumption;
+	
+	
+
+	public Automobile(double price, double fuelConsumption) {
+		super(price);
+		this.fuelConsumption = fuelConsumption;
+	}
+
+	
+	public double getFuelConsumption() {
+		return fuelConsumption;
+	}
+
+	public void setFuelConsumption(double fuelConsumption) {
+		if (fuelConsumption < 0) this.fuelConsumption = 0.0;
+		else this.fuelConsumption = fuelConsumption;
+	}
+	
+	@Override
+	public String toString() {
+		String result = "";
+		result += " Auto price:\t" + getPrice();
+		result += "; FuelCons:\t" + getFuelConsumption() + "\n";
+		return result;
+	}
+
+}

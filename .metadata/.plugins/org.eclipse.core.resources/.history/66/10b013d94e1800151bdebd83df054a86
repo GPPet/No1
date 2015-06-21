@@ -1,0 +1,51 @@
+package Problem_p49_2;
+
+public class Test {
+	synchronized void threadCount() {
+		System.out.println("Count to 25000");
+
+		for(int i = 0; i <= 25000; i++)
+			System.out.println(i + " ");
+		
+		System.out.println("Now wait for the running one...");
+		try {
+			wait();
+		} catch (Exception e) {
+			
+		}
+		
+		System.out.println("keep on counting to 50000");
+		for(int i = 25000; i <= 50000; i++)
+			System.out.println(i + " ");
+		
+		System.out.println("Counting completed!");
+		
+	}
+
+	synchronized void threadRun() {
+		for(int i = 0; i < 20; i++)
+			System.out.println("Thread2 is running...");
+		notify();
+	}
+}
+
+class InterThreadCommunication {
+	public static void main(String args[]) {
+		Test testie = new Test();
+		
+		Thread t1 = new Thread() {
+			public void run() {
+				testie.threadCount();
+			}
+		};
+		t1.start();
+
+		new Thread() {
+			public void run() {
+				testie.threadRun();;
+			}
+		}.start();
+
+	}
+
+}
