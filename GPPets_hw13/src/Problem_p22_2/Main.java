@@ -1,0 +1,39 @@
+package Problem_p22_2;
+
+import java.io.IOException;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// Напишете метод, който приема като параметър име на текстов файл и прочита съдържанието му 
+		// и го връща като String. Напишете метод, който приема като параметри име на текстов файл и
+		// String и записва низa във файла. Нека в самите методи да няма TRY-CATCH конструкция. 
+		// Използвайте методите в main метода.
+
+		ReadFile test = new ReadFile();
+		try {
+			String readFile = test.file2String("/home/gp5/Documents/Java/GPPet_java-course/GPPets_hw13/test.txt");
+			System.out.println(readFile);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Errors detected!");
+			e.printStackTrace();
+		}
+		
+		WriteFile test2 = new WriteFile();
+		String path = "/home/gp5/Documents/Java/GPPet_java-course/GPPets_hw13/test2.txt";
+		String stringIN = "Adding new information and saving it to file. This is just a test";
+		
+		
+		try {
+			test2.writeString2File(path, stringIN);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println("Errors detected!");
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}
